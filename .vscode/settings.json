@@ -1,0 +1,11 @@
+{
+  "eslint.autoFixOnSave": true,
+  "scssFormatter.singleQuote": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": false,
+  "editor.detectIndentation": false,
+  // Enable per-language
+  "[javascript]": {
+    "editor.formatOnSave": true
+  }
+}
