@@ -13,7 +13,7 @@ export const NavitionListItem = styled.li`
 
   a {
     color: ${(props) => props.theme.colors.textColor};
-    padding: 0 1rem 4px;
+    padding: 4px 1rem;
     display: inline-block;
     text-decoration: none;
   }

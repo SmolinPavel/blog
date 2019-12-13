@@ -7,8 +7,13 @@ export const List = styled.ul`
 `
 export const ListItem = styled.li`
   list-style-type: none;
+  transition: 0.3s;
 
   svg path {
     fill: ${(props) => props.theme.colors.typographyColor};
+  }
+
+  &:hover {
+    transform: scale(1.2);
   }
 `

@@ -5,5 +5,9 @@ export const Wrapper = styled.header`
   max-width: 90rem;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 1.1rem;
+
+  > * {
+    flex: 1;
+  }
 `

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useTheme } from 'hooks'
 import { LogoWrapper, SubTitle, Title, Wrapper } from './styled'
-import Toggle from 'components/Toggle'
+import DarkModeToggle from 'components/DarkModeToggle'
 
 const Logo = () => {
   const { toggleTheme, theme } = useTheme()
@@ -13,7 +13,7 @@ const Logo = () => {
         <Title>Блог Паши Смолина</Title>
         <SubTitle>О программировании</SubTitle>
       </LogoWrapper>
-      <Toggle onChange={toggleTheme} type="checkbox" value={theme} />
+      <DarkModeToggle onChange={toggleTheme} type="checkbox" value={theme} />
     </Wrapper>
   )
 }
