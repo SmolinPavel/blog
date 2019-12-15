@@ -27,5 +27,6 @@ export const Arrow = styled(ProfileArrow)`
 
   path {
     stroke: ${(props) => (props.theme.isDark ? '#C4C4C4' : '#000000')};
+    transition: var(--modeTransitionTimeout);
   }
 `

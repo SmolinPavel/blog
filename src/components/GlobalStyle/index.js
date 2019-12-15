@@ -19,6 +19,14 @@ const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.textColor};
     transition: var(--modeTransitionTimeout);
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 14px;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      font-size: 13px;
+    }
   }
 
   #root {

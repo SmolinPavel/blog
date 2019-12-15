@@ -18,6 +18,7 @@ export const SwitchInput = styled.input`
   opacity: 0;
   width: 0;
   height: 0;
+  transition: var(--modeTransitionTimeout);
 
   &:focus + span:before {
     box-shadow: 0 0 10px ${(props) => props.theme.colors.typographyColor};
@@ -36,7 +37,7 @@ export const Slider = styled.span`
   right: 0;
   bottom: 0;
   background: ${(props) => props.theme.colors.sliderBackground};
-  transition: 0.4s;
+  transition: var(--modeTransitionTimeout);
   border-radius: 2rem;
 
   &:before {
@@ -48,7 +49,7 @@ export const Slider = styled.span`
     left: ${sliderOffset};
     bottom: ${sliderOffset};
     background-color: ${(props) => (props.theme.isDark ? 'white' : '#FFFB90;')};
-    transition: 0.4s;
+    transition: var(--modeTransitionTimeout);
     border-radius: 50%;
   }
 `

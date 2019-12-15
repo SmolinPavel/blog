@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  width: 28rem;
-
-  &:not(:first-child) {
-    margin: auto;
+  @media only screen and (min-width: 1050px) {
+    &:not(:first-child) {
+      margin: auto;
+    }
   }
 `
 
@@ -55,4 +55,33 @@ export const Image = styled.img`
   );
   width: 447px;
   height: 199px;
+`
+
+export const Date = styled.div`
+  text-align: right;
+  color: ${(props) => props.theme.colors.typographyColor};
+  transition: var(--modeTransitionTimeout);
+  font-size: 12px;
+  padding: 0 0.2rem;
+`
+
+export const Teaser = styled.div`
+  font-size: 0.8rem;
+  font-weigth: 200;
+`
+
+export const Title = styled.h6`
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.2rem 0;
+
+  a {
+    color: ${(props) => props.theme.colors.typographyColor};
+    transition: var(--modeTransitionTimeout);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `

@@ -14,9 +14,11 @@ export const Articles = styled.div`
   flex: 1;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `
 
 export const ContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `

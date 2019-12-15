@@ -17,14 +17,24 @@ export const Wrapper = styled.section`
 export const InnerWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: calc(90rem + 2rem);
   color: #ffffff;
   padding: 0 1rem;
   width: 100%;
+
+  @media only screen and (max-width: 800px) {
+    justify-content: center;
+  }
 `
 
 export const BannerMessage = styled.div`
   width: 60%;
+
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 `
 
 export const CallToAction = styled.div`
