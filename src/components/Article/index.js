@@ -1,9 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 import { useTheme } from 'hooks'
 import { ReactComponent as ArticleWrapper } from 'assets/articleWrapper.svg'
 import { Date, Canvas, Image, Teaser, Title, Wrapper } from './styled'
+
+const StyledArticleWrapper = styled(ArticleWrapper)`
+  @media only screen and (max-width: 1100px) {
+    display: none;
+  }
+`
 
 const Article = ({ src, withBorder }) => {
   const { isDarkMode } = useTheme()
@@ -13,7 +20,7 @@ const Article = ({ src, withBorder }) => {
         <Canvas>
           <Image src={src} />
           {withBorder && !isDarkMode && (
-            <ArticleWrapper
+            <StyledArticleWrapper
               style={{ position: 'absolute', left: '0', top: '0' }}
             />
           )}

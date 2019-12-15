@@ -53,8 +53,14 @@ export const Image = styled.img`
     1.01879194630873% 21.8366834170854%,
     0.868008948545861% 15.3005025125628%
   );
-  width: 447px;
-  height: 199px;
+
+  max-width: 447px;
+  max-height: 199px;
+
+  @media only screen and (min-width: 1100px) {
+    width: 447px;
+    height: 199px;
+  }
 `
 
 export const Date = styled.div`
