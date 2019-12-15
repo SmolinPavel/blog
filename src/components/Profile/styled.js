@@ -5,6 +5,8 @@ import { ReactComponent as ProfileArrow } from 'assets/profileArrow.svg'
 
 export const Wrapper = styled.aside`
   position: relative;
+  width: 130px;
+  margin: auto;
 `
 
 export const Image = styled(Pavel)`

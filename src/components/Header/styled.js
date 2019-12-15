@@ -7,6 +7,17 @@ export const Wrapper = styled.header`
   justify-content: space-between;
   margin-bottom: 1.1rem;
 
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+
+    > * {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0.25rem 0;
+    }
+  }
+
   > * {
     flex: 1;
   }

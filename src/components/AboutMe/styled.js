@@ -5,6 +5,10 @@ export const Wrapper = styled.section`
   max-width: calc(90rem + 2rem);
   padding: 1rem;
   margin: 3.5rem 0;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 `
 
 export const Description = styled.div`
