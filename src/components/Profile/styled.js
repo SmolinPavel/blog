@@ -15,8 +15,8 @@ export const Image = styled(Pavel)`
   cursor: pointer;
 
   &:hover {
-    -webkit-filter: contrast(150%);
-    filter: contrast(150%);
+    -webkit-filter: contrast(140%);
+    filter: contrast(140%);
   }
 `
 

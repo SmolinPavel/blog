@@ -16,6 +16,7 @@ export const NavitionListItem = styled.li`
     padding: 4px 1rem;
     display: inline-block;
     text-decoration: none;
+    transition: var(--modeTransitionTimeout);
   }
 
   &:hover {

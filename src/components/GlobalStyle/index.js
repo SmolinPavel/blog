@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  :root {
+    --modeTransitionTimeout: 0.4s;
+  }
+
   *,
   *::before,
   *::after {
@@ -14,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.textColor};
-    transition: 0.3s;
+    transition: var(--modeTransitionTimeout);
   }
 
   #root {

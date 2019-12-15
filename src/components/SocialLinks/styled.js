@@ -11,6 +11,7 @@ export const ListItem = styled.li`
 
   svg path {
     fill: ${(props) => props.theme.colors.typographyColor};
+    transition: var(--modeTransitionTimeout);
   }
 
   &:hover {

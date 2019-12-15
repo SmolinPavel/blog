@@ -17,8 +17,10 @@ export const Wrapper = styled.section`
 export const InnerWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 90rem;
+  max-width: calc(90rem + 2rem);
   color: #ffffff;
+  padding: 0 1rem;
+  width: 100%;
 `
 
 export const BannerMessage = styled.div`

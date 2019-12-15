@@ -12,6 +12,7 @@ export const SubTitle = styled.h6`
   font-weight: normal;
   font-size: 0.9375rem;
   color: ${(props) => props.theme.colors.typographyColor};
+  transition: var(--modeTransitionTimeout);
 `
 
 export const Title = styled.h2`
