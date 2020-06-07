@@ -14,7 +14,7 @@ export const Wrapper = styled.header`
       width: 100%;
       display: flex;
       justify-content: center;
-      margin: 0.25rem 0;
+      margin: 0.3rem 0;
     }
   }
 

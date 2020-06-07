@@ -37,7 +37,10 @@ export const BannerMessage = styled.div`
   }
 `
 
-export const CallToAction = styled.div`
+export const CallToAction = styled.button`
+  border: none;
+  background-color: transparent;
+  color: inherit;
   background-image: url(${ctaButton});
   width: 341.5px;
   height: 55px;
@@ -45,10 +48,13 @@ export const CallToAction = styled.div`
   justify-content: center;
   align-items: center;
   font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
+  backface-visibility: hidden;
+  outline: none;
 
   &:hover {
-    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
   }
 `
